@@ -1,25 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300;400;500;600;700&display=swap'); 
 body{
-    font-family: sans-serif;
+    margin: 0;
     box-sizing: border-box;
-    
-    background-size: 100%;
-    background-color: rgb(255, 255, 255);
-    background-repeat: no-repeat;
-    margin: 0px;
 }
 .page1{
-
-
-height: 140vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-background-image: url(/Header\ -\ image.jpg) ;
-background-size: 100%;
-background-color: rgb(255, 255, 255);
-background-repeat: no-repeat;
-margin: 0!important;
+    background-image: url(/Header\ -\ image.jpg);
+    background-size:cover ;
+    background-repeat:no-repeat;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
 }
 .page2{
     display: grid;
@@ -27,13 +19,11 @@ margin: 0!important;
 }
 .page{
     font-family: IBM Plex Serif;
-    /* border: solid rgb(167, 25, 25); */
-   margin: 100px 0px;
+   width: 100%;
+   height: 120%;
+   padding-bottom:100px ;
 
-   
 }
-
-
 .logo{
 margin-top: 40px;
     width: 40px;
@@ -41,15 +31,11 @@ margin-top: 40px;
 .menu{
     margin: 0;
     font-family: sans-serif;
-    /* border: solid red; */
-    /* margin-top: -50px; */
     list-style: none;
   display:grid;
-  /* margin-top: -10px; */
   width: 90%;
   grid-template-columns: repeat(7,1fr) auto 1fr auto 4fr;
-  
-  
+
 }
 
 li{
@@ -63,7 +49,6 @@ a{
     color:#ffffff8a;
     font-weight: 550;
     font-size: 15px;
-    /* letter-spacing: 1px; */
 }
 .item1{
     grid-column: 4/5;
@@ -103,10 +88,10 @@ color: white;
 }
 .textbox h1{
     color: rgb(9, 105, 100);
-    width: auto;
     text-align: left;
-    grid-column: 1/11;
-    grid-row: 1/2;
+    width: 80%;
+    text-align: left;
+    margin: 10px 50px;
    align-self: center;
    margin-bottom: 0;
    padding-bottom: 0;
@@ -117,20 +102,17 @@ color: white;
     width: 150px;
     height: 3px;
     background-color:goldenrod;
-    grid-column: 4/10;
-    grid-row: 2/3;
-    margin: 0;
-    
+    margin: 0 85px;
 }
 .textbox{
-    display: grid;
-    grid-template-columns: repeat(10,1fr);
-    grid-template-rows:250px 30px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .textbox p{
-    grid-column: 4/11;
-    grid-row: 3/4;
-    margin: 0;
+    align-self: flex-end;
+    width: 60%;
+    margin: 20px 70px;
     font-family: sans-serif;
     line-height: 2;
     font-size: 18px;
@@ -147,11 +129,8 @@ color: white;
     background-color: rgb(201, 146, 8);
     position: absolute;
     z-index: -1;
-    /* bottom: 10px; */
     margin-top: 100px;
     margin-right: 300px;
-    
-
 }
 .title.second{
     grid-column: 2/9;
@@ -175,19 +154,15 @@ color: white;
     height: 450px;
 }
 .page3{
-    
     background-image: linear-gradient(to bottom, rgba(230, 240, 240, 0.7) 8%, white), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='152' height='152' viewBox='0 0 152 152'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='temple' fill='%23056d6d' fill-opacity='0.2'%3E%3Cpath d='M152 150v2H0v-2h28v-8H8v-20H0v-2h8V80h42v20h20v42H30v8h90v-8H80v-42h20V80h42v40h8V30h-8v40h-42V50H80V8h40V0h2v8h20v20h8V0h2v150zm-2 0v-28h-8v20h-20v8h28zM82 30v18h18V30H82zm20 18h20v20h18V30h-20V10H82v18h20v20zm0 2v18h18V50h-18zm20-22h18V10h-18v18zm-54 92v-18H50v18h18zm-20-18H28V82H10v38h20v20h38v-18H48v-20zm0-2V82H30v18h18zm-20 22H10v18h18v-18zm54 0v18h38v-20h20V82h-18v20h-20v20H82zm18-20H82v18h18v-18zm2-2h18V82h-18v18zm20 40v-18h18v18h-18zM30 0h-2v8H8v20H0v2h8v40h42V50h20V8H30V0zm20 48h18V30H50v18zm18-20H48v20H28v20H10V30h20V10h38v18zM30 50h18v18H30V50zm-2-40H10v18h18V10z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     display:flex;
     flex-direction: column;
    align-items: center;
-   
-
 }
 .card{
     background-color: rgb(4, 109, 109);
     padding: 30px;
     font-size: 12px;
-    /* font-family:sans-serif ; */
     line-height: 1.5;
     font-weight: 200;
     letter-spacing: 0.7px;
@@ -254,7 +229,6 @@ align-items: center;
 align-content: center;
 }
 .pic{
-    /* height: 100px; */
     width: 150px;
     padding: 30px;
     border: rgb(163, 162, 162) solid 1px;
@@ -262,15 +236,9 @@ align-content: center;
     height: 70px;
     display: flex;
     align-items: center;
-
-   
- 
-
 }
 .picbox img{
 width: 100%;
-
-
 }
 .boxing{
     align-items: center;
@@ -292,24 +260,28 @@ margin-top: 80px;
 
 }
 .container{
-    background-color: rgb(32, 32, 32);
-    height: 350px;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items:flex-start;
-  
-  margin: 90px;
-  align-content: center;
+    margin: 13%;
+    padding: 8% 8%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-gap: 20px;
 
-      padding: 40px;
-    align-content: center;
+    
+}
+
+.pbox.double{
+ display: grid;
+ grid-template-rows: 1fr 1fr;
+justify-content: center;
 
 }
-.container img {
-    height: 100px;
+.pbox.double img{
+
+    width: 100%;
+
 }
+
 .container h1{
     height: 200px;
     width: 400px;
@@ -324,6 +296,7 @@ margin-top: 80px;
     font-style: italic;
     font-weight: 400;
     font-size: 24px;
+    margin: 0;
    
 }
 .imgg{
@@ -335,6 +308,7 @@ margin-top: 80px;
 
    
 }
+
 .boxsmall.five{
     margin-top: -450px;
     margin-left: 400px;
@@ -343,8 +317,9 @@ margin-top: 80px;
       
 }
 .page.page5{
-    height: 100vh;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 }
@@ -411,13 +386,10 @@ margin-top: 80px;
     width: auto;
     font-weight: 600;
     margin-top: 0;
-
-
 }
 .manbox div{
     grid-column: 4/11;
     grid-row: 3/4;
-    
 }
 .manbox p{
     grid-column: 4/10;
@@ -457,7 +429,6 @@ margin-top: 80px;
 .logo2{
     display: flex;
     align-items: center;
-   /* width: 100vw; */
    justify-content: center;
     
 }
@@ -486,8 +457,11 @@ margin-top: 80px;
 }
 .contact{
     display: flex;
-width: 600px;
+width:100%;
+flex: 1 2 1;
 margin: 30px 0px ;
+align-items: center;
+justify-content: center;
 }
 .cont{
     padding: 20px;
@@ -497,7 +471,7 @@ margin: 30px 0px ;
     align-items: center;
     font-family: sans-serif;
     color: gray;
-    
+
 }
 .cont h1{
     font-size: 12px;
@@ -515,7 +489,7 @@ margin: 30px 0px ;
     background-color: rgb(4, 102, 94);
     width: 100%;
     display: flex;
-    /* flex: 1 4 1; */
+    
     justify-content: space-around;
     margin: 0;
     padding: 0;
@@ -535,4 +509,208 @@ justify-content: space-between;
     font-size: 10px;
     color: ghostwhite;
     font-family: sans-serif;
+}
+@media screen and (max-width : 1000px){
+    .page{
+        padding-bottom: 100px;
+    }
+    .contact{
+        justify-content: space-between;
+    }
+    .textbox{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding: 30px;
+
+       
+    }
+    .line{
+        align-self: center;
+        margin: 20px;
+    }
+    .card p{
+        display: none;
+    }
+    
+    .container{
+        display:flex;
+        flex-direction: column
+        ;
+
+
+    }
+    
+    .pbox.double img { 
+        width: 200px;
+      
+        padding: 15px;
+       
+    }
+    .textbox.a{
+       
+        height: 150px;
+        
+    }
+    
+    .textbox.a h1 {
+        text-align: left;
+       font-size: 25px;
+       width: 100%;
+             margin: 0px;
+             padding: 0;
+    }
+    .container h3 {
+       font-size: 10px;
+       width: 100%;       
+    }
+    .imgg {
+      width: 100%;
+      margin: 0;
+      height: 10%;
+
+    }
+    .boxsmall.five{
+        height: 0;
+
+    }
+    .page2{
+        display: flex;
+      flex-direction: column;
+      
+    }
+    .textbox h1{
+        padding: 10px;
+        margin: 0;
+        text-align: center;
+        font-size: 30px;
+    }
+    .textbox p{
+        font-size:1rem;
+        text-align: center;
+        padding: 10px;
+        align-self: center;
+    }
+    
+    .signs {
+        flex-direction: column;
+
+
+    }
+    .sign{
+        padding: 10px;
+        justify-content: center;
+    }
+ 
+    
+    .cards{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .box{
+        border-top: solid goldenrod 10px;
+        border-left: solid goldenrod 10px;
+        width: 300px;
+        align-self: center;
+        height: 300px;
+
+        
+    }
+    .boxsmall{
+        height: 0;
+     
+    }
+    .pill{
+        width:100%;
+        height: 100%;
+
+      
+    }
+    .pill.second{
+        width:100%;
+        height: 100%;
+      
+    }
+    .boxsmall.second {
+        height: 0;
+        width: 0;
+    }
+    .logo2 span {
+    width: 60px;
+    }
+    .picbox{
+
+        flex-wrap: nowrap;
+        height: 100%;
+        flex-direction: row;
+
+        flex-wrap: wrap-reverse;
+
+    }
+    .pic{
+        padding: 3px;
+        width: 100px;
+    }
+    .picc{
+        margin: 10px;
+    }
+    .menu{
+        display: flex;
+        flex-wrap: wrap;
+        display: none;
+    }
+   
+    .last{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        height: 120px;
+        width: 100%;
+       
+       
+    }
+    .links{
+        padding: 20px;
+    }
+    .social{
+       order: 2;
+       margin: 20px;
+    }
+    .title{
+        text-align: center;
+        /* padding: 0; */
+        margin: 0;
+        justify-self:center;
+        width: 80%; font-size: 30px;
+    }
+    .sign p{
+        display: none;
+    }
+    .manbox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 20px;
+
+    }
+    .manbox p{
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 0 20px;
+
+    }
+    .manbox h1{
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    .manbox button {
+        padding: 10px;
+    }
+    .page1{
+        padding-bottom: 150px;
+    }
+
 }
